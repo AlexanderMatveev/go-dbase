@@ -133,7 +133,7 @@ func (t DataType) Reflect() (reflect.Type, error) {
 // wether the column has a variable length.
 var nullFlagColumn = [11]byte{0x5F, 0x4E, 0x75, 0x6C, 0x6C, 0x46, 0x6C, 0x61, 0x67, 0x73}
 
-var MaxCharacterLength = 254
+var MaxCharacterLength = uint8(254)
 
 const (
 	MaxColumnNameLength = 10
